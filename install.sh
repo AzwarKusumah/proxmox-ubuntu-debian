@@ -16,7 +16,7 @@ detect_os() {
         . /etc/os-release
         OS=$ID
         VERSION=$VERSION_ID
-        echo "# Detected OS: $NAME"
+        echo "# Detected OS: $NAME $VERSION"
     else
         echo "Cannot detect OS version."
         exit 1
@@ -34,9 +34,9 @@ install_proxmox_ubuntu(){
 }
 
 install_proxmox_on(){
-    if ["$OS" == "Debian"]; then
+    if ["$OS" == "debian"]; then
         install_proxmox_debian
-    elif ["$OS" == "Ubuntu"]; then
+    elif ["$OS" == "bbuntu"]; then
         install_proxmox_ubuntu
     else 
         echo "This script only support Debian and Ubuntu"
