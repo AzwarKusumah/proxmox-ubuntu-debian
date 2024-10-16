@@ -44,4 +44,6 @@ install_proxmox_on(){
     fi
 }
 
+install_proxmox_on
+
 
