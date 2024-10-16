@@ -16,7 +16,7 @@ detect_os() {
         . /etc/os-release
         OS=$ID
         VERSION=$VERSION_ID
-        echo "# Detected OS: $NAME $VERSION"
+        echo "# Detected OS: $NAME"
     else
         echo "Cannot detect OS version."
         exit 1
