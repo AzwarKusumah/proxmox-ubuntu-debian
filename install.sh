@@ -34,9 +34,9 @@ install_proxmox_ubuntu(){
 }
 
 install_proxmox_on(){
-    if ["$OS" == "Debian"] then
+    if ["$OS" == "Debian"]; then
         install_proxmox_debian
-    elif ["$OS" == "Ubuntu"] then
+    elif ["$OS" == "Ubuntu"]; then
         install_proxmox_ubuntu
     else 
         echo "This script only support Debian and Ubuntu"
